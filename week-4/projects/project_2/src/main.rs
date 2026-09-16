@@ -14,7 +14,7 @@ fn main() {
     println!("Are you an experienced person (true or false): ");
     let mut input1 = String::new();
     io::stdin().read_line(&mut input1).expect("Not a valid String");
-    let experience:bool = input1.trim().to_lowercase().parse().expect("Failed to read input"); //to_lowercase puts strin gin lowercase and .parse is able to scessfully type case the string
+    let experience:bool = input1.trim().to_lowercase().parse().expect("Failed to read input"); //to_lowercase puts string in lowercase and .parse is able to sucessfully type case the string
 
     println!("Enter Age: ");
     let mut input2 = String::new();
