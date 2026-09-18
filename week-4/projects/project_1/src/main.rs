@@ -31,9 +31,12 @@ fn main() {
     println!("Discriminant of the quadratic equation with values a: {} b: {} and c: {} is: {}",input1, input2, input3, d);
 
     if d > 0.0 {
-        println!("The quadratic equation has two distinct roots!");
+        let x1 = (-b + d.sqrt()) / (2.0 * a);
+        let x2 = (-b - d.sqrt()) / (2.0 * a);
+        println!("The quadratic equation has two distinct roots! \n The roots of the quadratic equation are {:.3} and {:.3}", x1, x2);
     } else if d == 0.0 {
-        println!("The quadratic equation has exactly one distinct root!");
+        let x = -b / (2.0 * a);
+        println!("The quadratic equation has exactly one distinct root! \n The root is {:.3}", x);
     } else {
         println!("The quadratic equation has no real roots!");
     }
