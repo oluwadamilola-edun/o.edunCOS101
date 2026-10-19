@@ -62,15 +62,15 @@ fn candidate(){
         // Display all candidates with the highest experience
         println!("\nCandidates with the highest experience:");
 
-        let mut i = 0;
+        let mut n = 0;
 
-        while i < candidates.len() {
-            if candidates[i].1 == highest {
-                println!("Name: {}", candidates[i].0);
-                println!("Years of experience: {}", candidates[i].1);
+        while n < candidates.len() {
+            if candidates[n].1 == highest {
+                println!("Name: {}", candidates[n].0);
+                println!("Years of experience: {}", candidates[n].1);
             }
 
-            i += 1;
+            n += 1;
         }
     } else {
         println!("No candidates were entered.");
@@ -81,4 +81,3 @@ fn main() {
     println!("Hello, This is the EY intervew candidate selection");
     candidate()
 }
-
